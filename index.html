@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A-Automotive | Mont Belvieu Auto Repair | 20+ Years Trusted Service. Family-owned auto repair in Mont Belvieu, TX. Brakes, oil changes, diagnostics, transmission, A/C repair. Call (281) 385-1782">
+    <title>A-Automotive | Mont Belvieu Auto Repair | 20+ Years Trusted Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d0539a.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --charcoal: #1A1A2E;
+            --white: #FFFFFF;
+            --burnt-orange: #C44900;
+            --burnt-orange-dark: #A33D00;
+            --gray-light: #F5F5F5;
+            --gray-medium: #6B6B6B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Sora', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--burnt-orange);
+            color: var(--white);
+            border: 2px solid var(--burnt-orange);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--burnt-orange-dark);
+            border-color: var(--burnt-orange-dark);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--charcoal);
+        }
+
+        .btn-dark {
+            background-color: var(--charcoal);
+            color: var(--white);
+            border: 2px solid var(--charcoal);
+        }
+
+        .btn-dark:hover {
+            background-color: transparent;
+            color: var(--charcoal);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--charcoal);
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .nav-logo span {
+            color: var(--burnt-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--burnt-orange);
+        }
+
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .nav-phone:hover {
+            color: var(--burnt-orange);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.85)),
+                        url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=1920&q=80') center/cover no-repeat;
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 40px 24px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--white);
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--burnt-orange);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 120px 0;
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--burnt-orange);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--charcoal);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray-medium);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .service-category {
+            padding: 32px;
+            border: 1px solid #E5E5E5;
+            border-radius: 8px;
+        }
+
+        .service-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--charcoal);
+        }
+
+        .service-category ul {
+            list-style: none;
+        }
+
+        .service-category li {
+            padding: 8px 0;
+            border-bottom: 1px solid #F0F0F0;
+            color: var(--gray-medium);
+            font-size: 0.95rem;
+        }
+
+        .service-category li:last-child {
+            border-bottom: none;
+        }
+
+        /* About Section */
+        .about {
+            padding: 120px 0;
+            background-color: var(--gray-light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-quote {
+            position: relative;
+            padding: 48px;
+            background-color: var(--charcoal);
+            border-radius: 8px;
+        }
+
+        .about-quote::before {
+            content: '"';
+            font-family: 'Outfit', sans-serif;
+            font-size: 8rem;
+            color: var(--burnt-orange);
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            line-height: 1;
+            opacity: 0.3;
+        }
+
+        .quote-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--white);
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .about-content p {
+            color: var(--gray-medium);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .about-content .owner {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #E5E5E5;
+        }
+
+        .owner-info h4 {
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
+
+        .owner-info span {
+            color: var(--burnt-orange);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 120px 0;
+            background-color: var(--white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            padding: 40px;
+            background-color: var(--gray-light);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .testimonial-card.featured {
+            background-color: var(--charcoal);
+        }
+
+        .testimonial-card.featured .testimonial-text {
+            color: var(--white);
+        }
+
+        .testimonial-card.featured .testimonial-author {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .testimonial-quote {
+            font-size: 4rem;
+            color: var(--burnt-orange);
+            line-height: 1;
+            margin-bottom: -10px;
+            display: block;
+            opacity: 0.5;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+
+        /* Trust Section */
+        .trust {
+            padding: 100px 0;
+            background-color: var(--charcoal);
+            text-align: center;
+        }
+
+        .trust h2 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 48px;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .badge-item {
+            text-align: center;
+        }
+
+        .badge-icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--burnt-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            color: var(--burnt-orange);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .badge-label {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            background-color: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .contact-info p {
+            color: var(--gray-medium);
+            margin-bottom: 32px;
+            font-size: 1.05rem;
+        }
+
+        .contact-details {
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-item-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--gray-light);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--burnt-orange);
+            flex-shrink: 0;
+        }
+
+        .contact-item-text h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+            color: var(--charcoal);
+        }
+
+        .contact-item-text p {
+            margin: 0;
+            color: var(--gray-medium);
+            font-size: 0.95rem;
+        }
+
+        .contact-item-text a {
+            color: var(--burnt-orange);
+            font-weight: 500;
+        }
+
+        .contact-item-text a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 300px;
+            background-color: var(--gray-light);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contact-form {
+            background-color: var(--gray-light);
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            color: var(--charcoal);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--charcoal);
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #DDD;
+            border-radius: 4px;
+            font-family: 'Sora', sans-serif;
+            font-size: 1rem;
+            background-color: var(--white);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--burnt-orange);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form .btn {
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--charcoal);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .footer-logo span {
+            color: var(--burnt-orange);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--burnt-orange);
+        }
+
+        .footer-social a {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-left: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            color: var(--burnt-orange);
+        }
+
+        .footer-bottom {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 968px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                gap: 32px;
+            }
+
+            .stat-number {
+                font-size: 2.25rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-quote {
+                padding: 32px;
+            }
+
+            .quote-text {
+                font-size: 1.4rem;
+            }
+
+            .trust-badges {
+                gap: 32px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-social a {
+                margin: 0 8px;
+            }
+        }
+
+        /* Mobile Menu */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--charcoal);
+            z-index: 999;
+            padding: 80px 24px 24px;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav a {
+            display: block;
+            color: var(--white);
+            font-size: 1.25rem;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-nav .mobile-phone {
+            display: block;
+            background-color: var(--burnt-orange);
+            color: var(--white);
+            text-align: center;
+            padding: 16px;
+            border-radius: 4px;
+            margin-top: 24px;
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--gray-light);
+            z-index: 9999;
+        }
+
+        .page-loader-bar {
+            height: 100%;
+            background-color: var(--burnt-orange);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* Schema.org JSON-LD */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-loader">
+        <div class="page-loader-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="nav-logo">A-<span>Automotive</span></a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:+12813851782" class="nav-phone">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                    (281) 385-1782
+                </a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#services" onclick="toggleMobileMenu()">Services</a>
+        <a href="#about" onclick="toggleMobileMenu()">About</a>
+        <a href="#testimonials" onclick="toggleMobileMenu()">Reviews</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+        <a href="tel:+12813851782" class="mobile-phone">Call (281) 385-1782</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>20 Years of Trusted Auto Care</h1>
+            <p class="hero-subtitle">Family-owned and operated in Mont Belvieu, TX. Chamen Arnold and our team treat every car as if it's our own — with honest service, fair pricing, and quality repairs you can trust.</p>
+            <div class="hero-cta">
+                <a href="tel:+12813851782" class="btn btn-primary">Call (281) 385-1782</a>
+                <a href="#contact" class="btn btn-secondary">Schedule Appointment</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Years in Business</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Family</span>
+                    <span class="stat-label">Owned & Operated</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Local</span>
+                    <span class="stat-label">Mont Belvieu Mechanic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Complete Auto Repair Services</h2>
+                <p class="section-subtitle">From routine maintenance to complex diagnostics, we handle all your vehicle needs with the same care we'd give our own cars.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-category">
+                    <h3>Engine & Diagnostics</h3>
+                    <ul>
+                        <li>General Automotive Repair</li>
+                        <li>Diagnostic Services</li>
+                        <li>Engine Repair</li>
+                        <li>Check Engine Light Diagnosis</li>
+                        <li>Electrical System Repair</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>Brakes & Suspension</h3>
+                    <ul>
+                        <li>Brake Repair & Replacement</li>
+                        <li>Brake Pads & Rotors</li>
+                        <li>Calipers & Brake Fluid</li>
+                        <li>Suspension Work</li>
+                        <li>Shocks & Struts</li>
+                        <li>Wheel Alignment</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>Maintenance & More</h3>
+                    <ul>
+                        <li>Oil Changes</li>
+                        <li>Transmission Service</li>
+                        <li>A/C Repair & Recharge</li>
+                        <li>Preventive Maintenance</li>
+                        <li>Tire Services</li>
+                        <li>Fleet Services</li>
+                        <li>Pre-Purchase Inspections</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-quote">
+                    <p class="quote-text">Treat every car as if it's our own</p>
+                </div>
+                <div class="about-content">
+                    <h2>Your Hometown Mechanic Since 2005</h2>
+                    <p>A-Automotive is the definition of a neighborhood mechanic shop that grew with its community. Founded over 20 years ago when Mont Belvieu was a fraction of its current size, we've built this business on the principle that every car deserves honest, quality service.</p>
+                    <p>This isn't a franchise. There are no corporate service menus or upsell quotas. When you call A-Automotive, you're talking to someone who knows the local roads, understands the demands that Texas heat and industry puts on vehicles, and treats customers like neighbors because they are.</p>
+                    <div class="owner">
+                        <div class="owner-info">
+                            <h4>Chamen Arnold</h4>
+                            <span>Owner / Operator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What Customers Say</span>
+                <h2 class="section-title">Trusted by Mont Belvieu Families</h2>
+                <p class="section-subtitle">Don't just take our word for it — here's what our customers have to say about their experience at A-Automotive.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card featured">
+                    <span class="testimonial-quote">"</span>
+                    <p class="testimonial-text">Great communication, friendly staff, fast turnaround, and reasonable prices. All future repairs (that I can't do myself) I'm leaving to A-automotive.</p>
+                    <p class="testimonial-author">— Loc8NearMe Review</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote">"</span>
+                    <p class="testimonial-text">A Automotive is very knowledgeable and always knows what they are doing. They are 100% honest and always treat the customer right.</p>
+                    <p class="testimonial-author">— Yelp Testimonial</p>
+                </div>
+                <div class="testimonial-card">
+                    <span class="testimonial-quote">"</span>
+                    <p class="testimonial-text">These guys do a great job.</p>
+                    <p class="testimonial-author">— A-Automotive Website Review (5.0 rating)</p>
+                </div>
+                <div class="testimonial-card featured">
+                    <span class="testimonial-quote">"</span>
+                    <p class="testimonial-text">Our family-owned auto repair shop offers fair pricing, fast repairs, & exceptional customer service.</p>
+                    <p class="testimonial-author">— Business Tagline</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust">
+        <div class="container">
+            <h2>Why Customers Trust A-Automotive</h2>
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <div class="badge-icon">20+</div>
+                    <p class="badge-label">Years Experience</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+                    <p class="badge-label">Family Owned</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg></div>
+                    <p class="badge-label">Chamber of Commerce</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon"><svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
+                    <p class="badge-label">Dun & Bradstreet Listed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to schedule your appointment or have a question about your vehicle? Contact us today. We're here to help keep you safely on the road.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Address</h4>
+                                <p>2926 N Farm to Market 565 Road<br>Mont Belvieu, TX 77580</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+12813851782">(281) 385-1782</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Hours</h4>
+                                <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: By Appointment<br>Sun: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.234567890123!2d-94.886789!3d29.845678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjkvNDgnMDAuMDAwMSwgOTQuODY3NyU3QzAw!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="A-Automotive Location"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Request an Appointment</h3>
+                    <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(281) 555-1234">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="General Repair">General Automotive Repair</option>
+                                <option value="Oil Change">Oil Change</option>
+                                <option value="Brakes">Brake Repair</option>
+                                <option value="Diagnostics">Diagnostic Services</option>
+                                <option value="A/C">A/C Repair</option>
+                                <option value="Transmission">Transmission Service</option>
+                                <option value="Tires">Tire Services</option>
+                                <option value="Other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your vehicle and any symptoms or concerns..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">A-<span>Automotive</span></div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/aautomotivemontbelvieu/" target="_blank" aria-label="Facebook">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 A-Automotive. All rights reserved. Family-owned auto repair in Mont Belvieu, TX.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "A-Automotive",
+        "telephone": "+1-281-385-1782",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2926 N Farm to Market 565 Road",
+            "addressLocality": "Mont Belvieu",
+            "addressRegion": "TX",
+            "postalCode": "77580",
+            "addressCountry": "US"
+        },
+        "url": "https://aautomotivemontbelvieu.com",
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "image": "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=800",
+        "description": "Family-owned auto repair shop in Mont Belvieu, TX with over 20 years of experience. Services include brake repair, oil changes, diagnostics, transmission service, A/C repair, and more.",
+        "areaServed": {
+            "@type": "Place",
+            "name": "Mont Belvieu, TX"
+        },
+        "serviceType": ["General Automotive Repair", "Brake Repair", "Oil Change", "Transmission Service", "A/C Repair", "Diagnostic Services"],
+        "owner": {
+            "@type": "Person",
+            "name": "Chamen Arnold"
+        }
+    }
+    </script>
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.page-loader-bar');
+            loader.style.width = '100%';
+            setTimeout(function() {
+                document.querySelector('.page-loader').style.opacity = '0';
+                setTimeout(function() {
+                    document.querySelector('.page-loader').style.display = 'none';
+                }, 300);
+            }, 500);
+        });
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('appointmentForm');
+            const formData = new FormData(form);
+            
+            // Build message
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const service = formData.get('service');
+            const message = formData.get('message');
+            
+            // Create mailto link (opens email client with pre-filled message)
+            const subject = encodeURIComponent(`Appointment Request: ${service} - ${name}`);
+            const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nService: ${service}\n\nMessage:\n${message}`);
+            
+            window.location.href = `mailto:aautomotivemontbelvieu@gmail.com?subject=${subject}&body=${body}`;
+            
+            alert('Thank you for your request! An appointment request has been generated. Please send the email to schedule your appointment, or call us directly at (281) 385-1782.');
+            form.reset();
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
